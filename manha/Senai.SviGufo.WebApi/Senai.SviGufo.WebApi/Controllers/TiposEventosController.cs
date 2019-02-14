@@ -1,11 +1,14 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 using Senai.SviGufo.WebApi.Domains;
+using Senai.SviGufo.WebApi.Interfaces;
+using Senai.SviGufo.WebApi.Repositories;
 using System.Collections.Generic;
 
 namespace Senai.SviGufo.WebApi.Controllers
 {
     [Produces("application/json")]
     [Route("api/[controller]")]
+    [ApiController] // Implementa funcionalidades em nosso controller
     public class TiposEventosController : ControllerBase
     {
         List<TipoEventoDomain> tiposEventos = new List<TipoEventoDomain>()
@@ -15,6 +18,15 @@ namespace Senai.SviGufo.WebApi.Controllers
             new TipoEventoDomain{ Id = 3, Nome = "Desenvolvimento"},
             new TipoEventoDomain{ Id = 4, Nome = "Design"}
         };
+
+        //Cria um objeto do tipo ITipoEventoRepository
+        private ITipoEventoRepository TipoEventoRepository { get; set; }
+
+        public TiposEventosController()
+        {
+            //Cria uma instancia de tipoeventorepository
+            TipoEventoRepository = new TipoEventoRepository();
+        }
 
         //[HttpGet]
         //public string Get()
@@ -30,7 +42,7 @@ namespace Senai.SviGufo.WebApi.Controllers
         [HttpGet]
         public IEnumerable<TipoEventoDomain> Get()
         {
-            return tiposEventos;
+            return TipoEventoRepository.Listar();
         }
 
         /// <summary>
@@ -38,7 +50,6 @@ namespace Senai.SviGufo.WebApi.Controllers
         /// </summary>
         /// <param name="id">Id do tipo de evento</param>
         /// <returns>Retorn um Tipo de evento</returns>
-        
         [HttpGet("{id}")]
         public IActionResult GetById(int id)
         {
@@ -54,6 +65,46 @@ namespace Senai.SviGufo.WebApi.Controllers
 
             //retorna ok e o tipo de evento
             return Ok(tipoEvento);
+        }
+
+        [HttpPost] //Verbo para inserir 
+        //[FromBody] Pega os dados enviados para a api
+        public IActionResult Post(TipoEventoDomain tipoEventoRecebido)
+        {
+            //Adiciona o tipo de evento recebido na Api
+            //tiposEventos.Add(new TipoEventoDomain
+            //{
+            //    Id = tiposEventos.Count + 1,                                     
+            //    Nome = tipoEventoRecebido.Nome
+            //});
+
+            TipoEventoRepository.Cadastrar(tipoEventoRecebido);
+
+            //Retorna Ok e a lista com os tipos de eventos
+            return Ok();
+        }
+
+        [HttpPut] //Verbo para Atualizar
+        public IActionResult Put(TipoEventoDomain tipoEventoRecebido)
+        {
+            TipoEventoRepository.Alterar(tipoEventoRecebido);
+
+            return Ok();
+        }
+
+        //[HttpPut("{id}")] //verbo para alterar, passa o id no recurso
+        //public IActionResult Put(int id, TipoEventoDomain tipoEventoRecebido)
+        //{
+        //    return Ok();
+        //}
+
+
+        [HttpDelete("{id}")]//Verbo para deletar um registro
+        public IActionResult Delete(int id)
+        {
+            TipoEventoRepository.Deletar(id);
+
+            return Ok();
         }
     }
 }

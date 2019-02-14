@@ -12,3 +12,17 @@ C:\Users\fernando.henrique\Documents\Senai\1_Semestre_2019\1s2019-t2-sprint-2-ba
 C:\Users\fernando.henrique\Documents\Senai\1_Semestre_2019\1s2019-t2-sprint-2-backend\Senai.SviGufo.WebApi\Senai.SviGufo.WebApi\bin\Debug\netcoreapp2.1\Senai.SviGufo.WebApi.pdb
 C:\Users\fernando.henrique\Documents\Senai\1_Semestre_2019\1s2019-t2-sprint-2-backend\Senai.SviGufo.WebApi\Senai.SviGufo.WebApi\obj\Debug\netcoreapp2.1\Senai.SviGufo.WebApi.dll
 C:\Users\fernando.henrique\Documents\Senai\1_Semestre_2019\1s2019-t2-sprint-2-backend\Senai.SviGufo.WebApi\Senai.SviGufo.WebApi\obj\Debug\netcoreapp2.1\Senai.SviGufo.WebApi.pdb
+C:\Users\fernando.henrique\Documents\Senai\1_Semestre_2019\1s2019-t2-sprint-2-backend\manha\Senai.SviGufo.WebApi\Senai.SviGufo.WebApi\bin\Debug\netcoreapp2.1\Senai.SviGufo.WebApi.deps.json
+C:\Users\fernando.henrique\Documents\Senai\1_Semestre_2019\1s2019-t2-sprint-2-backend\manha\Senai.SviGufo.WebApi\Senai.SviGufo.WebApi\bin\Debug\netcoreapp2.1\Senai.SviGufo.WebApi.runtimeconfig.json
+C:\Users\fernando.henrique\Documents\Senai\1_Semestre_2019\1s2019-t2-sprint-2-backend\manha\Senai.SviGufo.WebApi\Senai.SviGufo.WebApi\bin\Debug\netcoreapp2.1\Senai.SviGufo.WebApi.runtimeconfig.dev.json
+C:\Users\fernando.henrique\Documents\Senai\1_Semestre_2019\1s2019-t2-sprint-2-backend\manha\Senai.SviGufo.WebApi\Senai.SviGufo.WebApi\bin\Debug\netcoreapp2.1\Senai.SviGufo.WebApi.dll
+C:\Users\fernando.henrique\Documents\Senai\1_Semestre_2019\1s2019-t2-sprint-2-backend\manha\Senai.SviGufo.WebApi\Senai.SviGufo.WebApi\bin\Debug\netcoreapp2.1\Senai.SviGufo.WebApi.pdb
+C:\Users\fernando.henrique\Documents\Senai\1_Semestre_2019\1s2019-t2-sprint-2-backend\manha\Senai.SviGufo.WebApi\Senai.SviGufo.WebApi\obj\Debug\netcoreapp2.1\Senai.SviGufo.WebApi.csprojAssemblyReference.cache
+C:\Users\fernando.henrique\Documents\Senai\1_Semestre_2019\1s2019-t2-sprint-2-backend\manha\Senai.SviGufo.WebApi\Senai.SviGufo.WebApi\obj\Debug\netcoreapp2.1\Senai.SviGufo.WebApi.csproj.CoreCompileInputs.cache
+C:\Users\fernando.henrique\Documents\Senai\1_Semestre_2019\1s2019-t2-sprint-2-backend\manha\Senai.SviGufo.WebApi\Senai.SviGufo.WebApi\obj\Debug\netcoreapp2.1\Senai.SviGufo.WebApi.RazorAssemblyInfo.cache
+C:\Users\fernando.henrique\Documents\Senai\1_Semestre_2019\1s2019-t2-sprint-2-backend\manha\Senai.SviGufo.WebApi\Senai.SviGufo.WebApi\obj\Debug\netcoreapp2.1\Senai.SviGufo.WebApi.RazorAssemblyInfo.cs
+C:\Users\fernando.henrique\Documents\Senai\1_Semestre_2019\1s2019-t2-sprint-2-backend\manha\Senai.SviGufo.WebApi\Senai.SviGufo.WebApi\obj\Debug\netcoreapp2.1\Senai.SviGufo.WebApi.AssemblyInfoInputs.cache
+C:\Users\fernando.henrique\Documents\Senai\1_Semestre_2019\1s2019-t2-sprint-2-backend\manha\Senai.SviGufo.WebApi\Senai.SviGufo.WebApi\obj\Debug\netcoreapp2.1\Senai.SviGufo.WebApi.AssemblyInfo.cs
+C:\Users\fernando.henrique\Documents\Senai\1_Semestre_2019\1s2019-t2-sprint-2-backend\manha\Senai.SviGufo.WebApi\Senai.SviGufo.WebApi\obj\Debug\netcoreapp2.1\Senai.SviGufo.WebApi.RazorTargetAssemblyInfo.cache
+C:\Users\fernando.henrique\Documents\Senai\1_Semestre_2019\1s2019-t2-sprint-2-backend\manha\Senai.SviGufo.WebApi\Senai.SviGufo.WebApi\obj\Debug\netcoreapp2.1\Senai.SviGufo.WebApi.dll
+C:\Users\fernando.henrique\Documents\Senai\1_Semestre_2019\1s2019-t2-sprint-2-backend\manha\Senai.SviGufo.WebApi\Senai.SviGufo.WebApi\obj\Debug\netcoreapp2.1\Senai.SviGufo.WebApi.pdb
