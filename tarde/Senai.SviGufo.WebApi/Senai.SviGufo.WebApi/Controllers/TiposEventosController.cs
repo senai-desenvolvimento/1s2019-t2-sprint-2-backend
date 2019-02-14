@@ -1,5 +1,7 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 using Senai.SviGufo.WebApi.Domains;
+using Senai.SviGufo.WebApi.Interfaces;
+using Senai.SviGufo.WebApi.Repositories;
 using System.Collections.Generic;
 
 namespace Senai.SviGufo.WebApi.Controllers
@@ -17,6 +19,13 @@ namespace Senai.SviGufo.WebApi.Controllers
             new TipoEventoDomain{ Id = 4, Nome = "Design"}
         };
 
+        private ITipoEventoRepository TipoEventoRepository { get; set; }
+
+        public TiposEventosController()
+        {
+            TipoEventoRepository = new TipoEventoRepository();
+        }
+
         //[HttpGet]
         //public string Get()
         //{
@@ -31,7 +40,7 @@ namespace Senai.SviGufo.WebApi.Controllers
         [HttpGet]
         public IEnumerable<TipoEventoDomain> Get()
         {
-            return tiposEventos;
+            return TipoEventoRepository.Listar();
         }
 
         /// <summary>
@@ -64,6 +73,7 @@ namespace Senai.SviGufo.WebApi.Controllers
         [HttpPost]
         public IActionResult Post(TipoEventoDomain tipoEvento)
         {
+            TipoEventoRepository.Cadastrar(tipoEvento);
             return Ok();
         }
 
@@ -75,6 +85,8 @@ namespace Senai.SviGufo.WebApi.Controllers
         [HttpPut]
         public IActionResult Put(TipoEventoDomain tipoEvento)
         {
+            TipoEventoRepository.Alterar(tipoEvento);
+
             return Ok();
         }
 
@@ -98,6 +110,8 @@ namespace Senai.SviGufo.WebApi.Controllers
         [HttpDelete("{id}")]
         public IActionResult Delete(int id)
         {
+            TipoEventoRepository.Deletar(id);
+
             return Ok();
         }
     }
