@@ -6,6 +6,7 @@ namespace Senai.SviGufo.WebApi.Controllers
 {
     [Produces("application/json")]
     [Route("api/[controller]")]
+    [ApiController] //Implementa funcionalidades no controller
     public class TiposEventosController : ControllerBase
     {
         List<TipoEventoDomain> tiposEventos = new List<TipoEventoDomain>()
@@ -38,7 +39,6 @@ namespace Senai.SviGufo.WebApi.Controllers
         /// </summary>
         /// <param name="id">Id do tipo de evento</param>
         /// <returns>Retorn um Tipo de evento</returns>
-        
         [HttpGet("{id}")]
         public IActionResult GetById(int id)
         {
@@ -54,6 +54,51 @@ namespace Senai.SviGufo.WebApi.Controllers
 
             //retorna ok e o tipo de evento
             return Ok(tipoEvento);
+        }
+
+        /// <summary>
+        /// Cadastra um novo tipo de evento
+        /// </summary>
+        /// <param name="tipoEvento">TipoEventoDomain</param>
+        /// <returns>Retorna um Status Code</returns>
+        [HttpPost]
+        public IActionResult Post(TipoEventoDomain tipoEvento)
+        {
+            return Ok();
+        }
+
+        /// <summary>
+        /// Atualiza um tipo de evento
+        /// </summary>
+        /// <param name="tipoEvento">Tipo Evento a ser atualizado</param>
+        /// <returns>Retorna um status code</returns>
+        [HttpPut]
+        public IActionResult Put(TipoEventoDomain tipoEvento)
+        {
+            return Ok();
+        }
+
+        /// <summary>
+        /// Altera um tipo de evento passando o id
+        /// </summary>
+        /// <param name="id">Id do Tipo de evento</param>
+        /// <param name="tipoEvento">TipoEventoDomain</param>
+        /// <returns>retorna o status code</returns>
+        [HttpPut("{id}")]
+        public IActionResult PutById(int id, TipoEventoDomain tipoEvento)
+        {
+            return Ok();
+        }
+
+        /// <summary>
+        /// Deleta um registro
+        /// </summary>
+        /// <param name="id">Id do tipo de evento</param>
+        /// <returns>Retorna status code</returns>
+        [HttpDelete("{id}")]
+        public IActionResult Delete(int id)
+        {
+            return Ok();
         }
     }
 }
