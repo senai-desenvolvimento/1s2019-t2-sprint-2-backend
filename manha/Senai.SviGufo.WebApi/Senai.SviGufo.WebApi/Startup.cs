@@ -10,10 +10,15 @@ namespace Senai.SviGufo.WebApi
     {
         // This method gets called by the runtime. Use this method to add services to the container.
         // For more information on how to configure your application, visit https://go.microsoft.com/fwlink/?LinkID=398940
+        // ConfigureServices é onde eu adiciono os serviços
         public void ConfigureServices(IServiceCollection services)
         {
+            
+            //Adiciona o Mvc ao projeto
             services.AddMvc().SetCompatibilityVersion(Microsoft.AspNetCore.Mvc.CompatibilityVersion.Version_2_1);
 
+            //Adiciona o Cors ao projeto
+            //Veremos em breve
             services.AddCors(options =>
             {
                 options.AddPolicy("CorsPolicy",
@@ -23,6 +28,8 @@ namespace Senai.SviGufo.WebApi
                         .AllowCredentials());
             });
 
+            //Adiciona o Swagger ao projeto passando algumas informações
+            //https://docs.microsoft.com/pt-br/aspnet/core/tutorials/getting-started-with-swashbuckle?view=aspnetcore-2.2&tabs=visual-studio
             services.AddSwaggerGen(c =>
             {
                 c.SwaggerDoc("v1", new Info { Title = "SviGufo API", Version = "v1" });
@@ -47,14 +54,12 @@ namespace Senai.SviGufo.WebApi
                 c.SwaggerEndpoint("/swagger/v1/swagger.json", "SviGufo");
             });
 
-            app.UseCors(builder => builder.AllowAnyHeader().AllowAnyMethod().AllowAnyOrigin());
+            //Habilita o Cors
+            app.UseCors("CorsPolicy");
 
+            //Habilita o MVC
             app.UseMvc();
-
-            //app.Run(async (context) =>
-            //{
-            //    await context.Response.WriteAsync("Hello World!");
-            //});
+            
         }
     }
 }

@@ -14,6 +14,11 @@ namespace Senai.SviGufo.WebApi.Repositories
     {
         private string StringConexao = "Data Source=.\\SqlExpress; initial catalog=SENAI_SVIGUFO_MANHA_BACKEND; integrated security=true";
 
+        /// <summary>
+        /// Altera uma instituição
+        /// </summary>
+        /// <param name="instituicao">Instituição</param>
+        /// <param name="id">Id da instituição</param>
         public void Alterar(InstituicaoDomain instituicao, int id)
         {
             string QueryUpdate = "UPDATE INSTITUICOES SET RAZAO_SOCIAL = @RAZAO_SOCIAL, NOME_FANTASIA = @NOME_FANTASIA, CNPJ = @CNPJ, LOGRADOURO = @LOGRADOURO, CEP = @CEP, UF = @UF, CIDADE = @CIDADE WHERE ID = @ID;";
@@ -35,6 +40,11 @@ namespace Senai.SviGufo.WebApi.Repositories
             }
         }
 
+        /// <summary>
+        /// Busca uma Instituição pelo Id
+        /// </summary>
+        /// <param name="id">Id da instituição</param>
+        /// <returns>Retorna uma instituição</returns>
         public InstituicaoDomain BuscarPorId(int id)
         {
             string QuerySelect = "SELECT ID, NOME_FANTASIA, RAZAO_SOCIAL, CNPJ, LOGRADOURO, CEP, UF, CIDADE FROM INSTITUICOES WHERE ID = @ID";
@@ -75,6 +85,10 @@ namespace Senai.SviGufo.WebApi.Repositories
             }
         }
 
+        /// <summary>
+        /// Cadastra uma instituição
+        /// </summary>
+        /// <param name="instituicao">Instituição</param>
         public void Cadastrar(InstituicaoDomain instituicao)
         {
             string QueryInsert = "INSERT INTO INSTITUICOES (RAZAO_SOCIAL, NOME_FANTASIA, CNPJ, LOGRADOURO, CEP, UF, CIDADE) " +
@@ -97,6 +111,10 @@ namespace Senai.SviGufo.WebApi.Repositories
             }
         }
 
+        /// <summary>
+        /// Exclui uma instituição
+        /// </summary>
+        /// <param name="id">Id da instituição</param>
         public void Deletar(int id)
         {
             string QueryDelete = "DELETE FROM INSTITUICOES WHERE ID = @ID;";
@@ -111,6 +129,10 @@ namespace Senai.SviGufo.WebApi.Repositories
             }
         }
 
+        /// <summary>
+        /// Lista as instituições
+        /// </summary>
+        /// <returns>Retorna uma lista de instituição</returns>
         public List<InstituicaoDomain> Listar()
         {
             string QuerySelect = "SELECT ID, NOME_FANTASIA, RAZAO_SOCIAL, CNPJ, LOGRADOURO, CEP, UF, CIDADE FROM INSTITUICOES";
