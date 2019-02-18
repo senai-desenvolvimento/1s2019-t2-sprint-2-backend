@@ -2,6 +2,7 @@
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.Http;
 using Microsoft.Extensions.DependencyInjection;
+using Swashbuckle.AspNetCore.Swagger;
 
 namespace Senai.SviGufo.WebApi
 {
@@ -13,6 +14,13 @@ namespace Senai.SviGufo.WebApi
         {
             services.AddMvc().SetCompatibilityVersion(Microsoft.AspNetCore.Mvc.CompatibilityVersion.Version_2_1);
 
+            //Adiciona o swagger
+            services.AddSwaggerGen(c =>
+            {
+                c.SwaggerDoc("v1", new Info { Title = "SviGufo", Version = "v1" });
+            });
+
+            //Em breve
             services.AddCors(options =>
             {
                 options.AddPolicy("CorsPolicy",
@@ -31,9 +39,20 @@ namespace Senai.SviGufo.WebApi
                 app.UseDeveloperExceptionPage();
             }
 
-            app.UseMvc();
+            //Usa o swagger
+            app.UseSwagger();
 
+            // Enable middleware to serve swagger-ui (HTML, JS, CSS, etc.), 
+            // specifying the Swagger JSON endpoint.
+            app.UseSwaggerUI(c =>
+            {
+                c.SwaggerEndpoint("/swagger/v1/swagger.json", "SviGufo API");
+            });
+
+            //Em breve
             app.UseCors(builder => builder.AllowAnyHeader().AllowAnyMethod().AllowAnyOrigin());
+
+            app.UseMvc();
 
             //app.Run(async (context) =>
             //{
