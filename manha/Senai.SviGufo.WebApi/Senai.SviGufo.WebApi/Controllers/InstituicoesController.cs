@@ -1,4 +1,5 @@
-﻿using Microsoft.AspNetCore.Mvc;
+﻿using Microsoft.AspNetCore.Authorization;
+using Microsoft.AspNetCore.Mvc;
 using Senai.SviGufo.WebApi.Domains;
 using Senai.SviGufo.WebApi.Interfaces;
 using Senai.SviGufo.WebApi.Repositories;
@@ -9,6 +10,7 @@ namespace Senai.SviGufo.WebApi.Controllers
     /// <summary>
     /// Controller responsável pelos endpoints referente a Instituicao
     /// </summary>
+    [Authorize(Roles = "ADMINISTRADOR")]
     [Produces("application/json")]
     [Route("api/[controller]")]
     [ApiController] //Implementa funcionalidades ao Controller 
@@ -28,6 +30,7 @@ namespace Senai.SviGufo.WebApi.Controllers
         /// </summary>
         /// <returns>Retorna uma List de Instituições</returns>
         [HttpGet]
+        
         public IActionResult Get()
         {
             //Retorna a lista de Instituições com o Status Code Ok
