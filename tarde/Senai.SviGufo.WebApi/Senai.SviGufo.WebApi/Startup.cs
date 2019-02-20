@@ -1,7 +1,9 @@
 ﻿using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.Extensions.DependencyInjection;
+using Microsoft.IdentityModel.Tokens;
 using Swashbuckle.AspNetCore.Swagger;
+using System;
 
 namespace Senai.SviGufo.WebApi
 {
@@ -18,6 +20,34 @@ namespace Senai.SviGufo.WebApi
             {
                 c.SwaggerDoc("v1", new Info { Title = "SviGufo", Version = "v1" });
             });
+
+
+            services.AddAuthentication(options =>
+           {
+               options.DefaultAuthenticateScheme = "JwtBearer";
+               options.DefaultChallengeScheme = "JwtBearer";
+           }).AddJwtBearer("JwtBearer", options =>
+           {
+               options.TokenValidationParameters = new TokenValidationParameters
+               {
+                   ValidateIssuer = true,
+
+                   ValidateAudience = true,
+
+                   ValidateLifetime = true,
+
+                   IssuerSigningKey = new SymmetricSecurityKey(System.Text.Encoding.UTF8.GetBytes("svigufo-chave-autenticacao")),
+
+                   ClockSkew = TimeSpan.FromMinutes(30),
+
+                   ValidIssuer = "Svigufo.WebApi",
+
+                   ValidAudience = "Svigufo.WebApi"
+               };
+           });
+            
+
+
 
             //Em breve
             services.AddCors(options =>
@@ -37,6 +67,8 @@ namespace Senai.SviGufo.WebApi
             {
                 app.UseDeveloperExceptionPage();
             }
+
+            app.UseAuthentication();
 
             //Usa o swagger
             app.UseSwagger();

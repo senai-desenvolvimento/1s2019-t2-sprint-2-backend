@@ -1,4 +1,5 @@
-﻿using Microsoft.AspNetCore.Mvc;
+﻿using Microsoft.AspNetCore.Authorization;
+using Microsoft.AspNetCore.Mvc;
 using Senai.SviGufo.WebApi.Domains;
 using Senai.SviGufo.WebApi.Interfaces;
 using Senai.SviGufo.WebApi.Repositories;
@@ -25,6 +26,9 @@ namespace Senai.SviGufo.WebApi.Controllers
         /// </summary>
         /// <returns>Retorna uma Lista de Instituições</returns>
         [HttpGet]
+        // mas era para acontecer amanhã, johny
+        // pode johny, se vocÊ colocar uma vírgula, fica topson
+        [Authorize(Roles = "ADMINISTRADOR")]
         public IActionResult Get()
         {
             return Ok(InstituicaoRepository.Listar());
