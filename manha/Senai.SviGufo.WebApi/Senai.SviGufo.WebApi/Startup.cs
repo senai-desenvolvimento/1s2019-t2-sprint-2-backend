@@ -36,6 +36,7 @@ namespace Senai.SviGufo.WebApi
                 c.SwaggerDoc("v1", new Info { Title = "SviGufo API", Version = "v1" });
             });
 
+            //Implementa autenticação
             services.AddAuthentication(options =>
                 {
                     options.DefaultAuthenticateScheme = "JwtBearer";
@@ -43,6 +44,7 @@ namespace Senai.SviGufo.WebApi
                 }
             ).AddJwtBearer("JwtBearer", options =>
             {
+                //Define as opções 
                 options.TokenValidationParameters = new TokenValidationParameters
                 {
                     //Quem esta solicitando
@@ -52,7 +54,7 @@ namespace Senai.SviGufo.WebApi
                     //Definindo o tempo de expiração
                     ValidateLifetime = true,
                     //Forma de criptografia
-                    IssuerSigningKey = new SymmetricSecurityKey(System.Text.Encoding.UTF8.GetBytes("svigufo-chave")),
+                    IssuerSigningKey = new SymmetricSecurityKey(System.Text.Encoding.UTF8.GetBytes("svigufo-chave-autenticacao")),
                     //Tempo de expiração do Token
                     ClockSkew = TimeSpan.FromMinutes(30),
                     //Nome da Issuer, de onde esta vindo

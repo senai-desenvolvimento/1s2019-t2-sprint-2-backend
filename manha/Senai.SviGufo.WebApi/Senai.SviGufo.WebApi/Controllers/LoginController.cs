@@ -29,8 +29,10 @@ namespace Senai.SviGufo.WebApi.Controllers
         {
             try
             {
+                //Busca o usurio pelo email e senha
                 UsuarioDomain usuarioBuscado = UsuarioRepository.BuscarPorEmailSenha(login.Email, login.Senha);
 
+                //Verifica se o usuário foi bus
                 if (usuarioBuscado == null)
                 {
                     return NotFound(new
@@ -62,6 +64,7 @@ namespace Senai.SviGufo.WebApi.Controllers
                     signingCredentials: creds
                 );
 
+                //Retorna Ok com o Token
                 return Ok(new {
                     token = new JwtSecurityTokenHandler().WriteToken(token)
                 });
