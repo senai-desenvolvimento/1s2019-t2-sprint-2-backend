@@ -4,6 +4,7 @@ using System.Linq;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
+using Senai.SviGufo.WebApi.Domains;
 using Senai.SviGufo.WebApi.Interfaces;
 using Senai.SviGufo.WebApi.Repositories;
 
@@ -30,9 +31,38 @@ namespace Senai.SviGufo.WebApi.Controllers
         {
             try
             {
+                return Ok(EventoRepository.Listar());
+            }
+            catch(Exception ex)
+            {
+                return BadRequest();
+            }
+        }
+
+        [HttpPost]
+        public IActionResult Post(EventoDomain evento)
+        {
+            try
+            {
+                EventoRepository.Cadastrar(evento);
                 return Ok();
             }
-            catch 
+            catch (Exception ex)
+            {
+                return BadRequest();
+            }
+
+        }
+
+        [HttpPut ("{id}")]
+        public IActionResult Put(EventoDomain evento, int id)
+        {
+            try
+            {
+                EventoRepository.Atualizar(evento, id);
+                return Ok();
+            }
+            catch
             {
                 return BadRequest();
             }

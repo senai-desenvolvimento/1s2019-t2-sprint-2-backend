@@ -12,8 +12,14 @@ namespace Senai.SviGufo.WebApi.Domains
         public string Descricao { get; set; }
         public DateTime DataEvento { get; set; }
         public bool AcessoLivre { get; set; }
+
+        public int InstituicaoId { get; set; }
         public InstituicaoDomain Instituicao { get; set; }
+
+        public int TipoEventoId { get; set; }
         public TipoEventoDomain TipoEvento { get; set; }
+
+
 
     }
 }
