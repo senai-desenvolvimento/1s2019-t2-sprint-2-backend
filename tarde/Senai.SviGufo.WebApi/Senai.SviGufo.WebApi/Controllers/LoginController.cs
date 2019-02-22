@@ -41,7 +41,9 @@ namespace Senai.SviGufo.WebApi.Controllers
                 {
                     new Claim(JwtRegisteredClaimNames.Email, usuario.Email),
                     new Claim(JwtRegisteredClaimNames.Jti, usuario.Id.ToString()),
-                    new Claim(ClaimTypes.Role, usuario.TipoUsuario)
+                    // é a permissão do usuário
+                    new Claim(ClaimTypes.Role, usuario.TipoUsuario),
+                    new Claim("teste", "lasanha")
                 };
 
                 var key = new SymmetricSecurityKey(System.Text.Encoding.UTF8.GetBytes("svigufo-chave-autenticacao"));
