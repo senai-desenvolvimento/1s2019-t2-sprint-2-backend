@@ -46,7 +46,8 @@ namespace Senai.SviGufo.WebApi.Controllers
                 {
                     new Claim(JwtRegisteredClaimNames.Email, usuarioBuscado.Email),
                     new Claim(JwtRegisteredClaimNames.Jti, usuarioBuscado.Id.ToString()),
-                    new Claim(ClaimTypes.Role, usuarioBuscado.TipoUsuario)
+                    new Claim(ClaimTypes.Role, usuarioBuscado.TipoUsuario),
+                    new Claim("teste", "laranja")
                 };
 
                 // Chave de acesso do token
