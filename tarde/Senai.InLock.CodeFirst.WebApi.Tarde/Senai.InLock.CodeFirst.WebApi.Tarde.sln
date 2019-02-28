@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.28307.136
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Senai.InLock.CodeFirst.WebApi.Tarde", "Senai.InLock.CodeFirst.WebApi.Tarde\Senai.InLock.CodeFirst.WebApi.Tarde.csproj", "{2C20D2FB-2CC1-4F73-BDAC-882E24D4F09C}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{2C20D2FB-2CC1-4F73-BDAC-882E24D4F09C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2C20D2FB-2CC1-4F73-BDAC-882E24D4F09C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2C20D2FB-2CC1-4F73-BDAC-882E24D4F09C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2C20D2FB-2CC1-4F73-BDAC-882E24D4F09C}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {0DAC524E-87F4-458C-AC9F-6A20D69BBF0C}
+	EndGlobalSection
+EndGlobal
