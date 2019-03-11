@@ -1,0 +1,14 @@
+C:\1s2019-t2-sprint-2-backend\Exercicios\Senai.ECommerce.WebApi\Senai.ECommerce.WebApi\bin\Debug\netcoreapp2.1\Senai.ECommerce.WebApi.deps.json
+C:\1s2019-t2-sprint-2-backend\Exercicios\Senai.ECommerce.WebApi\Senai.ECommerce.WebApi\bin\Debug\netcoreapp2.1\Senai.ECommerce.WebApi.runtimeconfig.json
+C:\1s2019-t2-sprint-2-backend\Exercicios\Senai.ECommerce.WebApi\Senai.ECommerce.WebApi\bin\Debug\netcoreapp2.1\Senai.ECommerce.WebApi.runtimeconfig.dev.json
+C:\1s2019-t2-sprint-2-backend\Exercicios\Senai.ECommerce.WebApi\Senai.ECommerce.WebApi\bin\Debug\netcoreapp2.1\Senai.ECommerce.WebApi.dll
+C:\1s2019-t2-sprint-2-backend\Exercicios\Senai.ECommerce.WebApi\Senai.ECommerce.WebApi\bin\Debug\netcoreapp2.1\Senai.ECommerce.WebApi.pdb
+C:\1s2019-t2-sprint-2-backend\Exercicios\Senai.ECommerce.WebApi\Senai.ECommerce.WebApi\obj\Debug\netcoreapp2.1\Senai.ECommerce.WebApi.csprojAssemblyReference.cache
+C:\1s2019-t2-sprint-2-backend\Exercicios\Senai.ECommerce.WebApi\Senai.ECommerce.WebApi\obj\Debug\netcoreapp2.1\Senai.ECommerce.WebApi.csproj.CoreCompileInputs.cache
+C:\1s2019-t2-sprint-2-backend\Exercicios\Senai.ECommerce.WebApi\Senai.ECommerce.WebApi\obj\Debug\netcoreapp2.1\Senai.ECommerce.WebApi.RazorAssemblyInfo.cache
+C:\1s2019-t2-sprint-2-backend\Exercicios\Senai.ECommerce.WebApi\Senai.ECommerce.WebApi\obj\Debug\netcoreapp2.1\Senai.ECommerce.WebApi.RazorAssemblyInfo.cs
+C:\1s2019-t2-sprint-2-backend\Exercicios\Senai.ECommerce.WebApi\Senai.ECommerce.WebApi\obj\Debug\netcoreapp2.1\Senai.ECommerce.WebApi.AssemblyInfoInputs.cache
+C:\1s2019-t2-sprint-2-backend\Exercicios\Senai.ECommerce.WebApi\Senai.ECommerce.WebApi\obj\Debug\netcoreapp2.1\Senai.ECommerce.WebApi.AssemblyInfo.cs
+C:\1s2019-t2-sprint-2-backend\Exercicios\Senai.ECommerce.WebApi\Senai.ECommerce.WebApi\obj\Debug\netcoreapp2.1\Senai.ECommerce.WebApi.RazorTargetAssemblyInfo.cache
+C:\1s2019-t2-sprint-2-backend\Exercicios\Senai.ECommerce.WebApi\Senai.ECommerce.WebApi\obj\Debug\netcoreapp2.1\Senai.ECommerce.WebApi.dll
+C:\1s2019-t2-sprint-2-backend\Exercicios\Senai.ECommerce.WebApi\Senai.ECommerce.WebApi\obj\Debug\netcoreapp2.1\Senai.ECommerce.WebApi.pdb

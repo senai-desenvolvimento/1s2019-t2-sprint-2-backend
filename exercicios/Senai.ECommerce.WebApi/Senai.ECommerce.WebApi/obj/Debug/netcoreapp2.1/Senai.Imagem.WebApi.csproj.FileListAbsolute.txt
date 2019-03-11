@@ -1,0 +1,14 @@
+C:\1s2019-t2-sprint-2-backend\Exercicios\Senai.Imagem.WebApi\Senai.Imagem.WebApi\bin\Debug\netcoreapp2.1\Senai.Imagem.WebApi.deps.json
+C:\1s2019-t2-sprint-2-backend\Exercicios\Senai.Imagem.WebApi\Senai.Imagem.WebApi\bin\Debug\netcoreapp2.1\Senai.Imagem.WebApi.runtimeconfig.json
+C:\1s2019-t2-sprint-2-backend\Exercicios\Senai.Imagem.WebApi\Senai.Imagem.WebApi\bin\Debug\netcoreapp2.1\Senai.Imagem.WebApi.runtimeconfig.dev.json
+C:\1s2019-t2-sprint-2-backend\Exercicios\Senai.Imagem.WebApi\Senai.Imagem.WebApi\bin\Debug\netcoreapp2.1\Senai.Imagem.WebApi.dll
+C:\1s2019-t2-sprint-2-backend\Exercicios\Senai.Imagem.WebApi\Senai.Imagem.WebApi\obj\Debug\netcoreapp2.1\Senai.Imagem.WebApi.csprojAssemblyReference.cache
+C:\1s2019-t2-sprint-2-backend\Exercicios\Senai.Imagem.WebApi\Senai.Imagem.WebApi\obj\Debug\netcoreapp2.1\Senai.Imagem.WebApi.csproj.CoreCompileInputs.cache
+C:\1s2019-t2-sprint-2-backend\Exercicios\Senai.Imagem.WebApi\Senai.Imagem.WebApi\obj\Debug\netcoreapp2.1\Senai.Imagem.WebApi.RazorAssemblyInfo.cache
+C:\1s2019-t2-sprint-2-backend\Exercicios\Senai.Imagem.WebApi\Senai.Imagem.WebApi\obj\Debug\netcoreapp2.1\Senai.Imagem.WebApi.RazorAssemblyInfo.cs
+C:\1s2019-t2-sprint-2-backend\Exercicios\Senai.Imagem.WebApi\Senai.Imagem.WebApi\obj\Debug\netcoreapp2.1\Senai.Imagem.WebApi.AssemblyInfoInputs.cache
+C:\1s2019-t2-sprint-2-backend\Exercicios\Senai.Imagem.WebApi\Senai.Imagem.WebApi\obj\Debug\netcoreapp2.1\Senai.Imagem.WebApi.AssemblyInfo.cs
+C:\1s2019-t2-sprint-2-backend\Exercicios\Senai.Imagem.WebApi\Senai.Imagem.WebApi\obj\Debug\netcoreapp2.1\Senai.Imagem.WebApi.RazorTargetAssemblyInfo.cache
+C:\1s2019-t2-sprint-2-backend\Exercicios\Senai.Imagem.WebApi\Senai.Imagem.WebApi\bin\Debug\netcoreapp2.1\Senai.Imagem.WebApi.pdb
+C:\1s2019-t2-sprint-2-backend\Exercicios\Senai.Imagem.WebApi\Senai.Imagem.WebApi\obj\Debug\netcoreapp2.1\Senai.Imagem.WebApi.dll
+C:\1s2019-t2-sprint-2-backend\Exercicios\Senai.Imagem.WebApi\Senai.Imagem.WebApi\obj\Debug\netcoreapp2.1\Senai.Imagem.WebApi.pdb
